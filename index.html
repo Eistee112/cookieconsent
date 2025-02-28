@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FairConsent – Under Development</title>
+    <title>FairConsent - Cookie Consent Test</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,22 +17,51 @@
         p {
             color: #666;
             font-size: 18px;
-            max-width: 600px;
+            max-width: 800px;
             margin: auto;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 20px;
+            text-align: left;
+        }
+        code {
+            background: #eee;
+            padding: 5px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>FairConsent</h1>
-        <p>This project is currently under development.</p>
-        <p>FairConsent aims to provide a fair and transparent cookie consent solution for web developers and website visitors.</p>
-        <p>More information will be available soon.</p>
+        <h1>FairConsent - Cookie Consent Test</h1>
+        <p>This page is used for testing the FairConsent cookie consent script.</p>
+        <p>Below is an example of how you can implement the script on your website.</p>
+
+        <h2>🚀 Direct Integration</h2>
+        <p>To integrate FairConsent directly, add this script to your `<head>`:</p>
+        <code>
+            &lt;script src="https://fairconsent.thundercloud.cz/cookieconsent.js"&gt;&lt;/script&gt;
+        </code>
+
+        <h2>🎯 Integration via Google Tag Manager (GTM)</h2>
+        <p>If you use GTM, create a new **Custom HTML tag** and insert the following:</p>
+        <code>
+            &lt;script&gt;
+            (function() {
+                var cc = document.createElement("script");
+                cc.src = "https://fairconsent.thundercloud.cz/cookieconsent.js";
+                document.head.appendChild(cc);
+            })();
+            &lt;/script&gt;
+        </code>
+
+        <h2>⚡ Test the Cookie Banner</h2>
+        <p>The banner should appear below (refresh if necessary):</p>
+
+        <!-- FairConsent Script -->
+        <script src="https://fairconsent.thundercloud.cz/cookieconsent.js"></script>
     </div>
 </body>
 </html>

@@ -1,0 +1,9 @@
+{
+    "layout": "popup",
+    "theme": "dark",
+    "consent_categories": {
+        "necessary": { "enabled": true },
+        "analytics": { "enabled": false },
+        "marketing": { "enabled": false }
+    }
+}
